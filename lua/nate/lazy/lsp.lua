@@ -29,6 +29,7 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "zls",
+                "clangd",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
