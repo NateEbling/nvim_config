@@ -17,8 +17,6 @@ return {
 
         vim.cmd('colorscheme onedark')
 
-        ColorMyPencils()
-
         end
     },
     {
