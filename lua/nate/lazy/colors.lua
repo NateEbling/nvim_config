@@ -3,9 +3,6 @@ return {
     name = 'onedarkpro',
     config = function()
         require('onedarkpro').setup({
-            styles = {
-                operators = "NONE",
-            },
             highlights = {
                 ["@function"] = { fg = "#abb2bf"},
                 ["@variable"] = { fg = "#abb2bf"},
