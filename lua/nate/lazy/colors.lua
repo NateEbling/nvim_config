@@ -33,4 +33,4 @@ return {
         vim.cmd('colorscheme onedark')
 
         end
-}
+    }
