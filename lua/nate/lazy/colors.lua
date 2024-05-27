@@ -24,6 +24,12 @@ return {
                 ["@keyword.repeat.c"] = { fg = "#d55fde"},
                 ["@keyword.c"] = { fg = "#d55fde"},
                 ["@variable.parameter.c"] = { fg = "#abb2bf"},
+                ["keyword.modifier.c"] = { fg = "#d55fde"},
+                ["@variable.parameter"] = { fg = "#abb2bf"},
+                ["@keyword.conditional.ternary.cpp"] = { fg = "#abb2bf"},
+            },
+            options = {
+                terminal_colors = false
             }
         })
 
