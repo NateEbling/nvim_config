@@ -36,6 +36,9 @@ return {
         config = function()
             require('rose-pine').setup({
                 disable_background = true,
+                enable = {
+                    terminal = false
+                },
                 styles = {
                     italic = false,
                 },
