@@ -30,6 +30,11 @@ return {
                 ["@lsp.type.keywordLiteral.zig"] = {fg = "#c16565"},
                 ["@variable.parameter.zig"] = {fg = "#c1c1c1"},
                 ["@lsp.typemod.parameter.declaration.zig"] = {fg="#c1c1c1"},
+                ["@lsp.type.namespace.zig"] = {fg="#c1c1c1"},
+                ["@lsp.type.enumMember.zig"] = {fg="#c1c1c1"},
+                ["@lsp.typemod.variable.declaration.zig"] = {fg="#c1c1c1"},
+                ["@lsp.type.method.zig"] = {fg="#c1c1c1"},
+                ["@lsp.type.errorTag.zig"] = {fg="#6282f4"},
             },
             options = {
                 terminal_colors = false
