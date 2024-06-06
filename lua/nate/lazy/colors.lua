@@ -37,14 +37,18 @@ return {
                 ["@lsp.type.errorTag.zig"] = {fg="#6282f4"},
             },
             options = {
-                terminal_colors = false
+                terminal_colors = false,
+                cursorline = false
             },
             colors = {
-                onedark = { bg = "#222222" }
+                onedark = { bg = "#222222" },
+                cursorline = "#FFFFFF"
             }
         })
 
         vim.cmd('colorscheme onedark')
+        vim.cmd('hi Cursor guibg=white')
+        vim.cmd('hi Cursor guifg=black')
 
         end
     }
