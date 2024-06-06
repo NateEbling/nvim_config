@@ -5,8 +5,6 @@
 " Website:      https://github.com/yorickpeterse/vim-paper.vim
 " License:      MPL 2.0
 
-" Modified by Nate Ebling
-
 set background=light
 
 hi clear
