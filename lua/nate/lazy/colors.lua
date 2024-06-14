@@ -1,33 +1,36 @@
 return {
     {
-        "folke/tokyonight.nvim",
-        config = function()
-            require("tokyonight").setup({
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker 				variant `night` and `day`
-                transparent = false, -- Enable this to disable setting the background color
-                terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-                styles = {
-                    -- Style to be applied to different syntax groups
-                    -- Value is any valid attr-list value for `:help nvim_set_hl`
-                    comments = { italic = false },
-                    keywords = { italic = false },
-                    -- Background styles. Can be "dark", "transparent" or "normal"
-                    sidebars = "dark", -- style for sidebars, see below
-                    floats = "dark", -- style for floating windows
-                },
-            })
-        end
-    },
-    {
         "olimorris/onedarkpro",
         config = function()
             require("onedarkpro").setup({
+                highlights = {
+                    ["@keyword"] = { fg = "#000000" },
+                    ["@string"] = { fg = "#216609" },
+                    ["@type"] = { fg = "#000000" },
+                    ["@property"] = { fg = "#c16565" },
+                    ["@variable"] = { fg = "#000000" },
+                    ["@punctuation"] = { fg = "#000000" },
+                    ["@operator"] = { fg = "#000000" },
+                    ["@function"] = { fg = "#000000" },
+                    ["@lsp.type.class"] = { fg = "#000000" },
+                    ["@punctuation.bracket"] = { fg = "#000000" },
+                    ["@comment"] = { fg = "#999960" },
+                    ["@lsp.type.macro.c"] = { fg = "#5c21a5" },
+                    ["@type.builtin.c"] = { fg = "#000000" },
+                    ["@parameter"] = { fg = "#636363" },
+                    ["@constant"] = { fg = "#5c21a5" },
+                    ["@number"] = { fg = "#c36d2d" },
+                },
+                options = {
+
+                },
+                colors = {
+                    onelight = { bg = "#ffffdd" },
+                }
             })
-        --vim.cmd('colorscheme onedark')
---        vim.cmd('hi Cursor guibg=white')
---        vim.cmd('hi Cursor guifg=black')
+            vim.cmd('colorscheme onelight')
+            vim.cmd('hi Cursor guibg=black')
+            vim.cmd('hi LineNR guifg=#bfbcaf')
         end
     },
 }
