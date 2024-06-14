@@ -130,9 +130,9 @@ Hi ColorColumn NONE lbackground NONE
 Hi Comment yellow NONE NONE
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
-Hi Cursor NONE black NONE
+Hi Cursor NONE white NONE
 Hi CursorLine NONE lbackground NONE
-Hi CursorLineNR black NONE NONE
+Hi CursorLineNR lgrey1 white NONE
 Hi Function black NONE NONE
 Hi Directory black NONE NONE
 Hi ErrorMsg red NONE NONE
