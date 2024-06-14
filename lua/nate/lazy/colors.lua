@@ -1,56 +1,33 @@
 return {
-   'olimorris/onedarkpro.nvim',
-    name = 'onedarkpro',
-    config = function()
-        require('onedarkpro').setup({
-            highlights = {
-                ["@string"] = { fg = "#21df51" },
-                ["@keyword"] = { fg = "#e3e3e3", bold = true},
-                ["@function.zig"] = { fg = "#a797ea" },
-                ["@variable"] = { fg = "#c1c1c1"},
-                ["@variable.member"] = { fg = "#c1c1c1"},
-                ["@function.builtin"] = { fg = "#c56d40" },
-                ["@function.call.zig"] = { fg = "#c1c1c1"},
-                ["@punctuation.bracket"] = {fg = "#c1c1c1"},
-                ["@type"] = { fg = "#6282f4" },
-                ["@lsp.type.builtin.zig"] = {fg = "#c56d40"},
-                ["@comment"] = {fg = "#a1a171"},
-                ["@lsp.type.function.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.mod.declaration.zig"] = {fg = "#a797ea"},
-                ["@lsp.typemod.namespace.declaration.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.typemode.function.generic.zig"] = {fg = "#c1c1c1"},
-                ["@Boolean"] = {fg = "#c16565"},
-                ["@operator"] = {fg = "#c1c1c1"},
-                ["@number"] = {fg = "#c16565"},
-                ["@lsp.type.struct.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.type.property.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.typemod.struct.declaration.zig"] = {fg="#c1c1c1"},
-                ["@lsp.typemod.property.declaration.zig"] = {fg="#c1c1c1"},
-                ["@variable.member.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.type.keywordLiteral.zig"] = {fg = "#c16565"},
-                ["@variable.parameter.zig"] = {fg = "#c1c1c1"},
-                ["@lsp.typemod.parameter.declaration.zig"] = {fg="#c1c1c1"},
-                ["@lsp.type.namespace.zig"] = {fg="#c1c1c1"},
-                ["@lsp.type.enumMember.zig"] = {fg="#c1c1c1"},
-                ["@lsp.typemod.variable.declaration.zig"] = {fg="#c1c1c1"},
-                ["@lsp.type.method.zig"] = {fg="#c1c1c1"},
-                ["@lsp.type.errorTag.zig"] = {fg="#6282f4"},
-            },
-            options = {
-                terminal_colors = false,
-                cursorline = false
-            },
-            colors = {
-                onedark = { bg = "#222222" },
-                cursorline = "#FFFFFF"
-            }
-        })
-
+    {
+        "folke/tokyonight.nvim",
+        config = function()
+            require("tokyonight").setup({
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker 				variant `night` and `day`
+                transparent = false, -- Enable this to disable setting the background color
+                terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+                styles = {
+                    -- Style to be applied to different syntax groups
+                    -- Value is any valid attr-list value for `:help nvim_set_hl`
+                    comments = { italic = false },
+                    keywords = { italic = false },
+                    -- Background styles. Can be "dark", "transparent" or "normal"
+                    sidebars = "dark", -- style for sidebars, see below
+                    floats = "dark", -- style for floating windows
+                },
+            })
+        end
+    },
+    {
+        "olimorris/onedarkpro",
+        config = function()
+            require("onedarkpro").setup({
+            })
         vim.cmd('colorscheme onedark')
         vim.cmd('hi Cursor guibg=white')
         vim.cmd('hi Cursor guifg=black')
-
         end
-    }
-
-
+    },
+}
