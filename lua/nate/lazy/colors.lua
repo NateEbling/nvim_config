@@ -31,6 +31,7 @@ return {
             vim.cmd('colorscheme onelight')
             vim.cmd('hi Cursor guibg=black')
             vim.cmd('hi LineNR guifg=#bfbcaf')
+            vim.cmd('hi ColorColumn guibg=#d7d7bb')
         end
     },
 }
