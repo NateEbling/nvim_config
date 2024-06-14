@@ -25,9 +25,9 @@ return {
         config = function()
             require("onedarkpro").setup({
             })
-        vim.cmd('colorscheme onedark')
-        vim.cmd('hi Cursor guibg=white')
-        vim.cmd('hi Cursor guifg=black')
+        --vim.cmd('colorscheme onedark')
+--        vim.cmd('hi Cursor guibg=white')
+--        vim.cmd('hi Cursor guifg=black')
         end
     },
 }
