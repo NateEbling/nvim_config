@@ -17,7 +17,7 @@ return {
                     ["@comment"] = { fg = "#999960" },
                     ["@lsp.type.macro.c"] = { fg = "#5c21a5" },
                     ["@type.builtin.c"] = { fg = "#000000" },
-                    ["@parameter"] = { fg = "#636363" },
+                    ["@parameter"] = { fg = "#000000" },
                     ["@constant"] = { fg = "#5c21a5" },
                     ["@number"] = { fg = "#c36d2d" },
                 },
