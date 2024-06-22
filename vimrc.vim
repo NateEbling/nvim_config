@@ -1,8 +1,9 @@
 call plug#begin()
 Plug 'yorickpeterse/vim-paper'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
-colorscheme paper
+"colorscheme paper
 
 set splitright
 
