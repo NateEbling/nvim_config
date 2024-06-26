@@ -1,9 +1,5 @@
 call plug#begin()
-Plug 'yorickpeterse/vim-paper'
-Plug 'joshdick/onedark.vim'
 call plug#end()
-
-"colorscheme paper
 
 set splitright
 
@@ -16,3 +12,5 @@ map <C-l> <C-W>l
 
 nmap <Leader>t :vs<CR> :te<CR>
 nmap <Leader>pv :Ex<CR>
+
+highlight Cursor guibg=#FFFFFF guifg=#000000

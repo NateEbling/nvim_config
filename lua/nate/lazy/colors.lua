@@ -1,9 +1,10 @@
-return {  
-    "olimorris/onedarkpro.nvim",
-    name = "onedark",
-    priority = 1000, -- Ensure it loads first
-    
-    config = function()
-        vim.cmd.colorscheme("onedark")
-    end
+return {
+    "slugbyte/lackluster.nvim",
+    lazy = false,
+    priority = 1000,
+    init = function()
+        -- vim.cmd.colorscheme("lackluster")
+        vim.cmd.colorscheme("lackluster-hack") -- my favorite
+        -- vim.cmd.colorscheme("lackluster-mint")
+    end,
 }
