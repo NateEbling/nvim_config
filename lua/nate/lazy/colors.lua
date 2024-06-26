@@ -1,9 +1,9 @@
-return { 
-	'NateEbling/melange-nvim',
-    	priority = 1000,
-    	config = function()
-      		vim.cmd.colorscheme('melange')
-    	end
+return {  
+    "olimorris/onedarkpro.nvim",
+    name = "onedark",
+    priority = 1000, -- Ensure it loads first
+    
+    config = function()
+        vim.cmd.colorscheme("onedark")
+    end
 }
-
-
