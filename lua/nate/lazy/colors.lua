@@ -4,7 +4,7 @@ return {
     priority = 1000,
     dependencies = "rktjmp/lush.nvim",
     init = function()
-        vim.o.background = "light"
+        vim.o.background = "dark"
         vim.cmd.colorscheme("zenbones") -- my favorite
         -- vim.cmd.colorscheme("lackluster-mint")
     end,
