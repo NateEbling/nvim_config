@@ -16,3 +16,5 @@ require("lazy").setup({
     spec = "nate.lazy",
     change_detection = { notify = false }
 })
+
+vim.keymap.set("n", "<leader>t", ":vs<CR> :te<CR>")
