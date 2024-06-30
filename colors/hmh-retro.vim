@@ -57,7 +57,8 @@ endfunction
 " Colors
 
 let s:back = ['#161616', 233]
-let s:default = ['#d4b794', 137]
+let s:default = ['#e6c59e', 137]
+let s:NONE = ["none", "none"]
 
 let s:margin = ["#262626", 235]
 let s:margin_hover = ["#333333", 236]
@@ -74,6 +75,7 @@ let s:special = ["#FF0000", 196]
 let s:bar = ["#CACACA", 251]
 let s:bar_active = ["#A8A8A8", 248]
 let s:base = ["#000000", 16]
+let s:blue = ["#0a1591", 16]
 
 let s:none = ['NONE', 'NONE']
 let s:underline = 'underline,'
@@ -106,6 +108,7 @@ call s:HL('NonText', s:back, s:back)
 
 " Character under cursor
 call s:HL('Cursor', s:back, s:cursor)
+call s:HL('CursorLine', s:NONE, s:blue)
 
 call s:HL('Comment', s:comment)
 call s:HL('Todo', s:keyword, s:back)
